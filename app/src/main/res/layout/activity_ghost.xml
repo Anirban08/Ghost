@@ -7,32 +7,46 @@
     tools:context="com.example.root.ghost.GhostActivity">
 
     <RelativeLayout
-        android:layout_width="370dp"
-        android:layout_height="505dp"
-        tools:layout_editor_absoluteX="9dp"
+        android:layout_width="350dp"
+        android:layout_height="589dp"
+        android:background="@drawable/gh"
+        tools:layout_editor_absoluteX="-3dp"
         tools:layout_editor_absoluteY="3dp">
-        "
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/tvGhost"
+            android:layout_width="344dp"
+            android:layout_height="80dp"
+            android:text="Ghost"
+            android:textSize="60dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/background_light"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="7dp"
+            />
+
 
         <TextView
             android:id="@+id/ghost_text"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:text="TextView"
-            android:layout_alignParentTop="true"
+            android:layout_above="@+id/ghost_status"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="29dp"
+            android:layout_marginBottom="73dp"
+            android:text="TextView"
+            android:textSize="40dp"
             android:layout_alignParentEnd="true" />
 
         <TextView
             android:id="@+id/ghost_status"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
+            android:layout_marginBottom="63dp"
             android:text="TextView"
-            android:layout_below="@+id/ghost_text"
+            android:textSize="18dp"
+            android:layout_above="@+id/score"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="38dp"
             android:layout_alignParentEnd="true" />
 
         <Button
@@ -40,31 +54,35 @@
             style="@style/Widget.AppCompat.Button.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
+            android:layout_marginBottom="81dp"
             android:text="Challenge"
-            android:layout_alignTop="@+id/score"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="106dp" />
+            android:layout_marginStart="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
 
         <Button
             android:id="@+id/btn_r"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:text="Restart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
             android:layout_alignBaseline="@+id/btn_c"
             android:layout_alignBottom="@+id/btn_c"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="61dp"
-            android:text="Restart" />
+            android:layout_alignParentEnd="true" />
 
         <TextView
             android:id="@+id/score"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
+            android:layout_marginBottom="75dp"
             android:text="TextView"
-            android:layout_below="@+id/ghost_status"
+            android:textSize="30dp"
+            android:layout_above="@+id/btn_r"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="40dp"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>
+
+
 </android.support.constraint.ConstraintLayout>
