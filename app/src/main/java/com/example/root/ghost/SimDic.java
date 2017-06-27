@@ -1,13 +1,10 @@
 package com.example.root.ghost;
 
-<<<<<<< HEAD
+
 /**
  * Created by root on 26/6/17.
  */
 
-public class SimDic {
-}
-=======
 import android.widget.ArrayAdapter;
 
 import java.io.BufferedReader;
@@ -220,4 +217,4 @@ public class SimDic implements GhostDictionary {
         return -1;
     }
 }
->>>>>>> 40be386... Initial commit
+
